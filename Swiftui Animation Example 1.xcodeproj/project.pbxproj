@@ -12,6 +12,7 @@
 		E481EF342A4C5D21002E260D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E481EF332A4C5D21002E260D /* Assets.xcassets */; };
 		E481EF372A4C5D21002E260D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E481EF362A4C5D21002E260D /* Preview Assets.xcassets */; };
 		E481EF3E2A4DED49002E260D /* ExampleTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E481EF3D2A4DED49002E260D /* ExampleTwo.swift */; };
+		E481EF402A4DF0C2002E260D /* ExampleThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = E481EF3F2A4DF0C2002E260D /* ExampleThree.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		E481EF332A4C5D21002E260D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E481EF362A4C5D21002E260D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E481EF3D2A4DED49002E260D /* ExampleTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTwo.swift; sourceTree = "<group>"; };
+		E481EF3F2A4DF0C2002E260D /* ExampleThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleThree.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				E481EF2F2A4C5D1E002E260D /* Swiftui_Animation_Example_1App.swift */,
 				E481EF312A4C5D1E002E260D /* ExampleOne.swift */,
 				E481EF3D2A4DED49002E260D /* ExampleTwo.swift */,
+				E481EF3F2A4DF0C2002E260D /* ExampleThree.swift */,
 				E481EF332A4C5D21002E260D /* Assets.xcassets */,
 				E481EF352A4C5D21002E260D /* Preview Content */,
 			);
@@ -143,6 +146,7 @@
 				E481EF3E2A4DED49002E260D /* ExampleTwo.swift in Sources */,
 				E481EF322A4C5D1E002E260D /* ExampleOne.swift in Sources */,
 				E481EF302A4C5D1E002E260D /* Swiftui_Animation_Example_1App.swift in Sources */,
+				E481EF402A4DF0C2002E260D /* ExampleThree.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
