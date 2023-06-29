@@ -7,36 +7,31 @@
 
 import SwiftUI
 
+
+// Shape with Spring
 struct ExampleTwo: View {
     
     //Animation Rule 1
-    @State private var isJunaed = false
+    @State private var animatingCircle = false
     
     var body: some View {
         ZStack {
             LinearGradient(colors:  [.blue, .black], startPoint: .topLeading, endPoint: .bottomTrailing)
                 .ignoresSafeArea()
             
-            HStack {
-                Text(isJunaed ? "This is Junaed Selected" :"This is Not Junaed")
-                    .bold()
-                    .opacity(isJunaed ? 1 : 0.5)
-                
-                Spacer()
-                
-                Image(systemName: isJunaed ? "checkmark.circle.fill" : "circle")
-                    .font(.system(size: 24))
-                    .foregroundColor(isJunaed ? .green : .gray)
-                    .padding()
+            VStack {
+                Circle()
+                    .frame(width: 100, height: 100)
+                    .foregroundStyle(.linearGradient(colors: [.cyan, .green], startPoint: .topTrailing, endPoint: .bottomLeading))
+                    .offset(x: animatingCircle ? 30 : 0, y: animatingCircle ? -100 : 0)
+                    .scaleEffect( animatingCircle ? 2.0 : 1.0)
                     .onTapGesture {
                         //Animation Rule 2
-                        withAnimation(.easeInOut(duration: 1.2)) {
-                            isJunaed.toggle()
+                        withAnimation(.spring(response: 0.5, dampingFraction: 0.3, blendDuration: 0)) {
+                            animatingCircle.toggle()
                         }
                     }
             }
-            .padding()
-            .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: isJunaed ? 5 : 24))
         }
     }
 }

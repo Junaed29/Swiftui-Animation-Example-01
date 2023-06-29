@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+//List Cell Example
 struct ExampleOne: View {
     
     //Animation Rule 1
